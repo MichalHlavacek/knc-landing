@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KNC Beauty - We'll be back!</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://knc-landing-nine.vercel.app/favicon.png">
+    
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,6 +30,15 @@
     </script>
 
     <style>
+        /* Custom Font Declaration */
+        @font-face {
+            font-family: 'Interstate';
+            src: url('https://knc-landing-nine.vercel.app/Interstate-UltraBlackItalic.woff2') format('woff2');
+            font-weight: 800; /* Mapped to extrabold/ultrabold */
+            font-style: italic;
+            font-display: swap;
+        }
+
         /* Base styles to ensure full height and smooth rendering */
         html, body {
             height: 100%;
@@ -62,7 +74,8 @@
 
         <!-- Main Content Area -->
         <main class="flex-grow flex flex-col items-center justify-center px-6 text-center -mt-10 md:-mt-16">
-            <h1 class="text-5xl sm:text-6xl md:text-8xl font-black italic uppercase tracking-tight leading-tight max-w-4xl mx-auto drop-shadow-sm">
+            <!-- Changed font-black to font-extrabold to match the custom font mapping -->
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-extrabold italic uppercase tracking-tight leading-tight max-w-4xl mx-auto drop-shadow-sm">
                 Hey Babe, <br class="hidden sm:block" />
                 We'll be back!
             </h1>
