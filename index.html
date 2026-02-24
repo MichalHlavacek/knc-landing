@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNC Beauty - We'll be back!</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        knc: {
+                            light: '#fff5f7', /* Very light blush pink from screenshot */
+                            dark: '#db567c',  /* Vibrant warm pink from screenshot */
+                        }
+                    },
+                    fontFamily: {
+                        /* Prioritize Interstate, falling back to system sans-serifs */
+                        interstate: ['Interstate', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base styles to ensure full height and smooth rendering */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-knc-light text-knc-dark font-interstate h-full selection:bg-knc-dark selection:text-white">
+
+    <div class="min-h-full flex flex-col">
+        
+        <!-- Header / Logo Area -->
+        <header class="w-full pt-12 pb-4 flex justify-center shrink-0 px-6">
+            <div class="w-full max-w-[120px] sm:max-w-[150px] md:max-w-[170px]">
+                <!-- Converted <symbol> to inline <svg> and applied fill-current to match text color -->
+                <svg viewBox="0 0 339 36" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto fill-current" aria-label="KNC Beauty Logo">
+                    <path d="M292.1 1l5.5 23.5-2.3 10.5h15l2.2-10.5L328 1h-12.8l-6.1 9.8-2-9.8h-15z"></path>
+                    <path d="M257.2 11.4h7.8L260 35h15.1l5-23.6h7.8L290.1 1h-30.7l-2.2 10.4z"></path>
+                    <path d="M224 1l-4.3 20c-1 4.6-.2 8.3 2.3 11 2.6 2.6 6.7 4 12.2 4 10.5 0 16.6-5.2 18.7-15l4.3-20h-14.7l-4.7 22.3c-.5 2-1.2 2.8-2.1 2.8-1.2 0-1.6-1-1.2-2.8L239.2 1H224z"></path>
+                    <path d="M203.2 13.5v8.4h-3.5l3.5-8.4zM216.8 1h-19.1l-16.2 34h12.7l2-4.6h7.1V35h15.2l-1.7-34z"></path>
+                    <path d="M186.4 1h-27.8l-7.1 34h27.8l2-9.4h-12.9l.7-3.2h10.7l2-9.3h-10.7l.6-2.7h12.9l1.8-9.4z"></path>
+                    <path d="M133.9 27.1h-1.5l1.2-5.4h1.1c1.7 0 2.5.5 2.5 1.9 0 2.4-1.3 3.5-3.3 3.5m2.7-13.3h-1.3l1.1-5h1.1c1.6 0 2.4.6 2.4 1.8-.1 2.2-1.3 3.2-3.3 3.2M143.3 1h-20.4l-7.3 34h21.5c5 0 8.8-1.1 11.2-3.2 2.5-2.1 3.7-4.6 3.7-7.5 0-3.9-2.4-6.2-7.5-6.8 3-.3 5.4-1.2 7.2-2.9 1.7-1.4 2.7-3.5 2.7-5.7.1-4.7-3.3-7.9-11.1-7.9"></path>
+                    <path d="M73.7 21.6c0 4.2 1.3 7.7 4 10.4s6.4 4 11.2 4c10.5 0 17.1-4.7 19.4-14.5l-13.9-.9c-.6 2.5-1.2 4.2-1.9 4.9-.6.8-1.3 1.2-2 1.2-.9 0-1.6-.6-1.6-2.1 0-1.2.3-3.2.9-6 .6-2.8 1.2-5 1.9-6.7.6-1.8 1.3-2.6 2.4-2.6.7 0 1.2.4 1.4 1.1.2.7.2 2.3-.1 4.7l14-.9c0-9-5-14.3-15.2-14.3-6.3 0-11.3 2.1-15.1 6.2-3.5 4.2-5.4 9.3-5.4 15.5"></path>
+                    <path d="M56.5 1L44.4.7l-8 33.8 12.3.3 2.8-12.1L56.3 35l11.8.3 8-33.8-12.4-.3L61 12.7 56.5 1z"></path>
+                    <path d="M333.2 5.3V4h.6c.7 0 1 .3 1 .7 0 .5-.5.7-1.1.7h-.5zm.1 2.5V6h.5c.6 0 .9.2 1 .7.1.5.2.9.4 1.1h1.2c-.2-.4-.3-.7-.4-1.1-.1-.6-.4-.9-.9-1.1.6-.2 1-.5 1-1 0-.4-.2-.8-.5-1-.5-.3-1.1-.4-1.7-.3-.8 0-1.4 0-1.9.1v4.5h1.3zm.7-5.9c2 0 3.6 1.6 3.6 3.6S336 9 334 9c-2.2 0-3.8-1.6-3.8-3.6 0-1.9 1.6-3.5 3.8-3.5zm0-.9c-2.8 0-5 2-5 4.5s2.2 4.5 5 4.5 5-2 5-4.5-2.2-4.5-5-4.5z"></path>
+                    <path d="M22.3 1H7.1L-.2 35H15l1.5-6.8 1.6-2 1.1 8.8h16.2l-3.9-20.6L41.8 1h-16l-5.5 8.9 2-8.9z"></path>
+                </svg>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex-grow flex flex-col items-center justify-center px-6 text-center -mt-10 md:-mt-16">
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-black italic uppercase tracking-tight leading-tight max-w-4xl mx-auto drop-shadow-sm">
+                Hey Babe, <br class="hidden sm:block" />
+                We'll be back!
+            </h1>
+        </main>
+
+        <!-- Empty Footer for flex balance -->
+        <footer class="h-24 shrink-0"></footer>
+
+    </div>
+
+</body>
+</html>
